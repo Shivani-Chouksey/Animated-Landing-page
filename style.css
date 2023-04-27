@@ -1,0 +1,454 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-image: url(./background.png);
+    background-position: bottom;
+    background-size: cover;
+    overflow: hidden; */
+
+    
+}
+#front{
+    width: 100%;
+    height: 100%;
+    background-image: url(./background.png);
+    background-position: bottom;
+    background-size: cover;
+    overflow: hidden;
+}
+#navbar{
+    width: 100%;
+    height: 100px;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 110px;
+}
+#navbar img{
+    width: 130px;
+}
+#navbar button{
+    padding: 10px 25px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.495);
+    border: 2px solid rgba(255, 255, 255, 0.603);
+    font-weight: 600;
+    border-radius: 100px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#navbar button:hover{
+    color: white;
+}
+#text{
+    position: absolute;
+    left: 110px;
+    top: 50%;
+    transform: translateY(-50%);
+        color: rgba(255, 255, 255, 0.808);
+}
+h1{
+    font-size: 100px;
+    
+}
+h3{
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.607);
+}
+button{
+    padding: 11px 27px;
+    border: 2px solid rgba(255, 255, 255, 0.815);
+    border-radius: 100px;
+    color: rgba(255, 255, 255, 0.779);
+    background-color: transparent;
+    margin-top: 28px;
+    cursor: pointer;
+}
+#sidebar{
+z-index: 99999999999;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 50px;
+    height: 100%;
+    background-color: #055C68;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#menu img{
+    width: 30px;
+    display: block;
+    margin-top: 50px;
+}
+#menu img:hover{
+    scale: 1.4;
+    
+}
+#link{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+     align-items: center; 
+     gap: 15px;
+     justify-content: space-between;
+
+}
+#link img{
+   width: 30px;
+     
+}
+#link img:hover{
+    scale: 1.4;
+}
+#share{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+
+}
+#share img{
+    width: 30px;
+}
+#share img:hover{
+    scale: 1.4;
+}
+.bubble{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    bottom: -60px;
+    left: 0%;
+    padding: 0px 60px;
+    
+}
+.bubble img{
+    animation-name: move;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    width: 50px;
+   
+}
+@keyframes move {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+       
+        opacity: 1;
+    }
+    70%{
+       
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 1;
+    }
+}
+.bubble img:nth-child(1){
+    animation-delay: 1s;
+}
+.bubble img:nth-child(2){
+    animation-delay: 2.5s;
+    width: 25px;
+}
+.bubble img:nth-child(3){
+    animation-delay: 6s;
+}
+.bubble img:nth-child(4){
+    animation-delay: 3.5s;
+    width: 25px;
+}
+.bubble img:nth-child(5){
+    animation-delay: 5s;
+}
+.bubble img:nth-child(6){
+    animation-delay: 4s;
+    width: 25px;
+
+}
+.bubble img:nth-child(7){
+    animation-delay: 2s;
+    width: 35px;
+}
+#fs{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-image: url(./illus.png); */
+    background-image: url(./background.png);
+    background-position: bottom;
+    background-size: cover;
+    overflow: hidden;
+    /* background: linear-gradient(#00CBB8,#055D69); */
+    z-index: 99999;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    top: -100%;
+    transition: all 2s ease;
+}
+#fs h1{
+    font-size: 120px;
+    color: rgba(255, 255, 255, 0.862);
+    font-family: DancingScript;
+   
+}
+#fsnavbar{
+    position: relative;
+    width: 100%;
+    height: 110px;
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 70px;
+}
+
+#fsnavbar img{
+    width: 60px;
+}
+#fslogo{
+    position: relative;
+    
+}
+#fslogo h4{
+    position: absolute;
+    top: 15%;
+    left: 46%;
+    font-size: 30px;
+    color: #fff;
+}
+#links a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    pointer-events: initial;
+}
+
+/* project**************** */
+#project{
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color:#111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* left: -120%; */
+    opacity: 0;
+    background-image: url(./background.png);
+    background-position: bottom;
+    background-size: cover;
+    overflow: hidden;
+    pointer-events: fill;
+    
+}
+#project>h1{
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+ #project>h1>span{
+    display: flex;
+    align-items: center;
+    margin: 0px 25px;
+    
+ }
+ #project>h1>span>img{
+    /* rotate: 180deg; */
+    transition: 0.3s ease;
+    height: 50px;
+ }
+
+#endec-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    padding: 8px;
+    width: 28%;
+    margin: 38px;
+    border-radius: 8px;
+}
+#endec-div h3{
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 12px 15px;
+
+}
+#enc-btn{
+    background-color: #333;
+}
+#endec-div h3 span{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+#endec-div h3 span img{
+    height: 20px;
+}
+
+#encryption{
+    width: 45%;
+   
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    display: none;
+
+}
+#encryption h5{
+    font-size: 16px;
+    font-weight: 500;
+    color: #6e6e6e;
+    margin-bottom: 13px;
+}
+#encryption #txtmsg{
+    width: 100%;
+    height: 70px;
+    border: 1px solid #343434;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+    background-color: #1c1c1c;
+}
+#encryption input{
+    width: 100%;
+   margin-bottom: 50px;
+    border: 1px solid #343434;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+    background-color: #1c1c1c;
+}
+#encryption button{
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+    background-color: #1c1c1c;
+    border: none;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 17px;
+    cursor: pointer;
+
+
+    
+}
+button span{
+     display: flex;
+     margin-right: 12px;
+}
+button img{
+    height: 20px;
+}
+#decryption{
+    width: 45%;
+   
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    
+
+}
+#decryption h5{
+    font-size: 16px;
+    font-weight: 500;
+    color: #6e6e6e;
+    margin-bottom: 13px;
+}
+#decryption #emojimsg{
+    width: 100%;
+    height: 70px;
+    border: 1px solid #343434;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+    background-color: #1c1c1c;
+}
+#decryption input{
+    width: 100%;
+   margin-bottom: 50px;
+    border: 1px solid #343434;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+    background-color: #1c1c1c;
+}
+#decryption button{
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+    background-color: #1c1c1c;
+    border: none;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 17px;
+    cursor: pointer;
+
+
+    
+}
+button span{
+     display: flex;
+     margin-right: 12px;
+}
+button img{
+    height: 20px;
+}
+#result{
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #1c1c1c;
+    border: 1px solid #343434;
+    width: 45%;
+    display: none;
+    margin-top: 40px;
+}
